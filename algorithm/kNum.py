@@ -9,6 +9,9 @@
 
 # 출력설명
 # 각 케이스별 k번째 수를 아래 출력예제와 같이 출력하세요.
+import sys
+
+sys.stdin = open("input.txt", "rt")
 
 case = int(input())
 for idx in range(case):
