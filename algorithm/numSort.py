@@ -19,3 +19,14 @@ for i in range(len(num_list)):
 # num_list.sort(reverse=True)
 for num in num_list:
     print(num)
+
+
+# 처음 답
+# n = int(input())
+# num_list = []
+# for i in range(n):
+#     tmp = int(input())
+#     num_list.append(tmp)
+# num_list.sort()
+# for num in num_list:
+#     print(num)
