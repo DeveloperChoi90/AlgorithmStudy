@@ -6,9 +6,16 @@ import sys
 sys.stdin = open("input.txt", "rt")
 n = int(input())
 num_list = []
-for i in range(n):
-    tmp = int(input())
-    num_list.append(tmp)
-num_list.sort(reverse=True)
-while(num_list):
-    print(num_list.pop())
+for _ in range(n):
+    num_list.append(int(input()))
+
+# Bubble Sort
+for i in range(len(num_list)):
+    for j in range(len(num_list)):
+        if num_list[i] < num_list[j]:
+            num_list[i], num_list[j] = num_list[j], num_list[i]
+
+#     num_list.append(tmp)
+# num_list.sort(reverse=True)
+for num in num_list:
+    print(num)
